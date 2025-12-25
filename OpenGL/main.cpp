@@ -3,9 +3,14 @@
 #include<GLFW/glfw3.h>
 #include<cmath>
 #include<vector>
-
+float screenHeight = 800.0f;
+float screenWidth = 600.0f;
+float g_aspect = screenHeight / screenWidth;
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 	glViewport(0, 0, width, height);
+	if (height != 0) {
+		g_aspect = static_cast<float>(width) / static_cast<float>(height);
+	}
 }
 void processInput(GLFWwindow* window) {
 	if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS) {
@@ -32,8 +37,9 @@ int main() {
 	const char* vertexShaderSource = 
 	"#version 330 core\n"
 	"layout (location = 0) in vec3 aPos;\n"
+	"uniform float aspect;\n"
 	"void main(){\n"
-	"gl_Position = vec4(aPos,1.0f);\n"
+	"gl_Position = vec4(aPos.x/aspect,aPos.y,aPos.z,1.0f);\n"
 	"}";
 	const char* fragmentShaderSource =
 		"#version 330 core\n"
@@ -74,8 +80,6 @@ int main() {
 		std::cout << "SHADER::PROGRAM::COMPILATION::ERROR" << std::endl;
 		return -1;
 	}
-	float screenHeight = 600.0f;
-	float screenWidth = 800.0f;
 	float centerX = 0.0f;
 	float centerY = 0.0f;
 	float radius = 0.5f;
@@ -108,6 +112,8 @@ int main() {
 		processInput(window);
 		glClearColor(0.5f, 0.1f, 0.2f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
+		int aspectLocation = glGetUniformLocation(shaderProgram, "aspect");
+		glUniform1f(aspectLocation,g_aspect);
 		glUseProgram(shaderProgram);
 		glDrawArrays(GL_TRIANGLE_FAN, 0, res+2);  
 		glfwSwapBuffers(window);
