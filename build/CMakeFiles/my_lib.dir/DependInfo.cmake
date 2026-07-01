@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/coldtee/Projects/OpenGL_Project/timer.cpp" "CMakeFiles/my_lib.dir/timer.cpp.o" "gcc" "CMakeFiles/my_lib.dir/timer.cpp.o.d"
-  "" "libmy_lib.so" "gcc" "CMakeFiles/my_lib.dir/link.d"
+  "/home/coldtee/Projects/OpenGL_Project/src/timer.cpp" "CMakeFiles/my_lib.dir/src/timer.cpp.o" "gcc" "CMakeFiles/my_lib.dir/src/timer.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

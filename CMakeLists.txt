@@ -5,9 +5,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(Graphics)
 
-add_library(my_lib SHARED timer.h timer.cpp)
+add_library(my_lib STATIC include/timer.h src/timer.cpp)
 
-add_executable(main main.cpp glad.c)
+add_executable(main src/main.cpp src/glad.c)
 
 find_package(glfw3 REQUIRED)
 find_package(OpenGL REQUIRED)

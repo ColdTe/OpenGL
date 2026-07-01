@@ -2,11 +2,11 @@ main: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
-  CMakeFiles/main.dir/main.cpp.o \
-  CMakeFiles/main.dir/glad.c.o \
+  CMakeFiles/main.dir/src/main.cpp.o \
+  CMakeFiles/main.dir/src/glad.c.o \
   /usr/lib/libglfw.so.3.4 \
   /usr/lib/libglm.a \
-  libmy_lib.so \
+  libmy_lib.a \
   /usr/lib/libGLX.so \
   /usr/lib/libOpenGL.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libstdc++.so \
@@ -57,15 +57,15 @@ main: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
-CMakeFiles/main.dir/main.cpp.o:
+CMakeFiles/main.dir/src/main.cpp.o:
 
-CMakeFiles/main.dir/glad.c.o:
+CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/lib/libglfw.so.3.4:
 
 /usr/lib/libglm.a:
 
-libmy_lib.so:
+libmy_lib.a:
 
 /usr/lib/libGLX.so:
 
