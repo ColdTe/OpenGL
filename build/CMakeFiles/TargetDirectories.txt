@@ -1,4 +1,3 @@
-/home/coldtee/Projects/OpenGL_Project/build/CMakeFiles/my_lib.dir
 /home/coldtee/Projects/OpenGL_Project/build/CMakeFiles/main.dir
 /home/coldtee/Projects/OpenGL_Project/build/CMakeFiles/edit_cache.dir
 /home/coldtee/Projects/OpenGL_Project/build/CMakeFiles/rebuild_cache.dir

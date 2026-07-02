@@ -124,19 +124,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_lib
-
-# Build rule for target.
-my_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_lib
-.PHONY : my_lib
-
-# fast build rule for target.
-my_lib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_lib.dir/build.make CMakeFiles/my_lib.dir/build
-.PHONY : my_lib/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -197,30 +184,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/timer.o: src/timer.cpp.o
-.PHONY : src/timer.o
-
-# target to build an object file
-src/timer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_lib.dir/build.make CMakeFiles/my_lib.dir/src/timer.cpp.o
-.PHONY : src/timer.cpp.o
-
-src/timer.i: src/timer.cpp.i
-.PHONY : src/timer.i
-
-# target to preprocess a source file
-src/timer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_lib.dir/build.make CMakeFiles/my_lib.dir/src/timer.cpp.i
-.PHONY : src/timer.cpp.i
-
-src/timer.s: src/timer.cpp.s
-.PHONY : src/timer.s
-
-# target to generate assembly for a file
-src/timer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_lib.dir/build.make CMakeFiles/my_lib.dir/src/timer.cpp.s
-.PHONY : src/timer.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -231,16 +194,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... my_lib"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/timer.o"
-	@echo "... src/timer.i"
-	@echo "... src/timer.s"
 .PHONY : help
 
 

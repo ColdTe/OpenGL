@@ -114,7 +114,6 @@ main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/compiler_depend.ts
 main: /usr/lib/libglfw.so.3.4
 main: /usr/lib/libglm.a
-main: libmy_lib.a
 main: /usr/lib/libGLX.so
 main: /usr/lib/libOpenGL.so
 main: CMakeFiles/main.dir/link.txt

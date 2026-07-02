@@ -197,5 +197,4 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
- /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /home/coldtee/Projects/OpenGL_Project/include/timer.h
+ /usr/include/c++/16/tr1/riemann_zeta.tcc
