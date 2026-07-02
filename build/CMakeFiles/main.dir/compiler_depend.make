@@ -74,7 +74,7 @@ CMakeFiles/main.dir/src/glad.c.o: /home/coldtee/Projects/OpenGL_Project/src/glad
 CMakeFiles/main.dir/src/main.cpp.o: /home/coldtee/Projects/OpenGL_Project/src/main.cpp \
   /home/coldtee/Projects/OpenGL_Project/include/KHR/khrplatform.h \
   /home/coldtee/Projects/OpenGL_Project/include/glad/glad.h \
-  /home/coldtee/Projects/OpenGL_Project/include/timer.h \
+  /home/coldtee/Projects/OpenGL_Project/include/shader.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -186,6 +186,11 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/coldtee/Projects/OpenGL_Project/src/ma
   /usr/include/c++/16/bits/exception_defines.h \
   /usr/include/c++/16/bits/exception_ptr.h \
   /usr/include/c++/16/bits/formatfwd.h \
+  /usr/include/c++/16/bits/fs_dir.h \
+  /usr/include/c++/16/bits/fs_fwd.h \
+  /usr/include/c++/16/bits/fs_ops.h \
+  /usr/include/c++/16/bits/fs_path.h \
+  /usr/include/c++/16/bits/fstream.tcc \
   /usr/include/c++/16/bits/functexcept.h \
   /usr/include/c++/16/bits/functional_hash.h \
   /usr/include/c++/16/bits/hash_bytes.h \
@@ -218,6 +223,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/coldtee/Projects/OpenGL_Project/src/ma
   /usr/include/c++/16/bits/postypes.h \
   /usr/include/c++/16/bits/predefined_ops.h \
   /usr/include/c++/16/bits/ptr_traits.h \
+  /usr/include/c++/16/bits/quoted_string.h \
   /usr/include/c++/16/bits/range_access.h \
   /usr/include/c++/16/bits/ranges_algobase.h \
   /usr/include/c++/16/bits/ranges_base.h \
@@ -265,6 +271,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/coldtee/Projects/OpenGL_Project/src/ma
   /usr/include/c++/16/chrono \
   /usr/include/c++/16/clocale \
   /usr/include/c++/16/cmath \
+  /usr/include/c++/16/codecvt \
   /usr/include/c++/16/compare \
   /usr/include/c++/16/concepts \
   /usr/include/c++/16/cstddef \
@@ -284,8 +291,11 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/coldtee/Projects/OpenGL_Project/src/ma
   /usr/include/c++/16/ext/numeric_traits.h \
   /usr/include/c++/16/ext/string_conversions.h \
   /usr/include/c++/16/ext/type_traits.h \
+  /usr/include/c++/16/filesystem \
   /usr/include/c++/16/format \
+  /usr/include/c++/16/fstream \
   /usr/include/c++/16/initializer_list \
+  /usr/include/c++/16/iomanip \
   /usr/include/c++/16/ios \
   /usr/include/c++/16/iosfwd \
   /usr/include/c++/16/iostream \
@@ -322,8 +332,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/coldtee/Projects/OpenGL_Project/src/ma
   /usr/include/c++/16/typeinfo \
   /usr/include/c++/16/vector \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -456,10 +468,6 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/linux/stddef.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.so:
-
-/usr/include/linux/errno.h:
-
 /usr/include/errno.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/time_members.h:
@@ -473,6 +481,12 @@ CMakeFiles/main.dir/src/glad.c.o:
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.so:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++io.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
@@ -502,6 +516,18 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/c++/16/tr1/ell_integral.tcc:
 
+/usr/include/c++/16/tr1/beta_function.tcc:
+
+/usr/include/c++/16/string:
+
+/usr/include/c++/16/streambuf:
+
+/usr/include/c++/16/sstream:
+
+/usr/include/c++/16/span:
+
+/usr/include/c++/16/ratio:
+
 /usr/include/c++/16/bits/concept_check.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/atomic_word.h:
@@ -522,6 +548,8 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/bits/fp-fast.h:
 
+/usr/include/c++/16/bits/fs_fwd.h:
+
 /usr/include/c++/16/bits/basic_ios.h:
 
 /usr/include/c++/16/bits/allocator.h:
@@ -529,8 +557,6 @@ CMakeFiles/main.dir/src/glad.c.o:
 /usr/include/bits/time64.h:
 
 /usr/include/bits/stdlib-float.h:
-
-/usr/include/c++/16/ratio:
 
 /usr/include/bits/wctype-wchar.h:
 
@@ -580,9 +606,7 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/asm/bitsperlong.h:
 
-/home/coldtee/Projects/OpenGL_Project/include/timer.h:
-
-/usr/include/c++/16/bits/locale_facets_nonio.h:
+/home/coldtee/Projects/OpenGL_Project/include/shader.h:
 
 /usr/include/c++/16/bit:
 
@@ -598,7 +622,15 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/bits/types/struct_itimerspec.h:
 
-/usr/include/bits/struct_rwlock.h:
+/usr/include/c++/16/tr1/bessel_function.tcc:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/16/bits/algorithmfwd.h:
+
+/usr/include/c++/16/bits/stl_algobase.h:
+
+/usr/include/c++/16/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/16/bits/unicode.h:
 
@@ -660,6 +692,8 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /home/coldtee/Projects/OpenGL_Project/src/glad.c:
 
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/basic_file.h:
+
 /usr/include/c++/16/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/16/bits/allocated_ptr.h:
@@ -668,9 +702,13 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/bits/select.h:
 
-/usr/include/c++/16/streambuf:
+/usr/include/c++/16/string_view:
+
+/usr/include/bits/types/__fpos64_t.h:
 
 /usr/include/features-time64.h:
+
+/usr/include/c++/16/filesystem:
 
 /usr/include/bits/timesize.h:
 
@@ -680,7 +718,7 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/bits/waitstatus.h:
 
-/usr/include/c++/16/string:
+/usr/include/c++/16/bits/quoted_string.h:
 
 /usr/lib/libGLX.so:
 
@@ -691,10 +729,6 @@ CMakeFiles/main.dir/src/glad.c.o:
 /usr/include/bits/libc-header-start.h:
 
 /usr/include/c++/16/bits/alloc_traits.h:
-
-/usr/include/c++/16/backward/binders.h:
-
-/usr/include/c++/16/span:
 
 /usr/include/bits/types/wint_t.h:
 
@@ -774,6 +808,8 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/bits/types/struct_timespec.h:
 
+/usr/include/c++/16/codecvt:
+
 /usr/include/c++/16/bits/locale_classes.tcc:
 
 /usr/include/bits/types/time_t.h:
@@ -783,6 +819,12 @@ CMakeFiles/main.dir/src/glad.c.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
 /usr/include/c++/16/bits/ostream.tcc:
+
+/usr/include/c++/16/stdexcept:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/stdio.h:
 
 /usr/include/c++/16/bits/functional_hash.h:
 
@@ -854,6 +896,14 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/c++/16/bits/formatfwd.h:
 
+/usr/include/c++/16/backward/binders.h:
+
+/usr/include/c++/16/bits/fs_path.h:
+
+/usr/include/c++/16/bits/nested_exception.h:
+
+/usr/include/c++/16/bits/fstream.tcc:
+
 /usr/include/c++/16/bits/functexcept.h:
 
 /usr/include/c++/16/bits/stdexcept_throwfwd.h:
@@ -874,6 +924,8 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/bits/types/__sigset_t.h:
 
+/usr/include/c++/16/bits/fs_dir.h:
+
 /usr/include/c++/16/iosfwd:
 
 /usr/include/bits/struct_mutex.h:
@@ -881,6 +933,8 @@ CMakeFiles/main.dir/src/glad.c.o:
 /usr/include/c++/16/bits/locale_facets.h:
 
 /usr/include/c++/16/bits/locale_facets.tcc:
+
+/usr/include/c++/16/bits/locale_facets_nonio.h:
 
 /usr/include/c++/16/bits/max_size_type.h:
 
@@ -894,12 +948,6 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/c++/16/bits/move.h:
 
-/usr/include/c++/16/bits/nested_exception.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/c++/16/string_view:
-
 /usr/include/c++/16/bits/new_allocator.h:
 
 /usr/include/c++/16/bits/new_except.h:
@@ -907,6 +955,8 @@ CMakeFiles/main.dir/src/glad.c.o:
 /usr/include/c++/16/bits/ostream_print.h:
 
 /usr/include/c++/16/ostream:
+
+/usr/include/c++/16/bits/fs_ops.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
@@ -942,21 +992,11 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/c++/16/bits/shared_ptr_base.h:
 
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/c++/16/bits/algorithmfwd.h:
-
-/usr/include/c++/16/tr1/bessel_function.tcc:
-
 /usr/include/bits/mathcalls-helper-functions.h:
 
 /usr/include/c++/16/bits/specfun.h:
 
 /usr/include/c++/16/bits/sstream.tcc:
-
-/usr/include/c++/16/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/16/bits/stl_algobase.h:
 
 /usr/include/asm-generic/posix_types.h:
 
@@ -990,7 +1030,13 @@ CMakeFiles/main.dir/src/glad.c.o:
 
 /usr/include/c++/16/bits/uniform_int_dist.h:
 
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/c++/16/iomanip:
+
 /usr/include/c++/16/iostream:
+
+/usr/include/c++/16/fstream:
 
 /usr/include/c++/16/bits/version.h:
 
@@ -1059,13 +1105,3 @@ CMakeFiles/main.dir/src/glad.c.o:
 /usr/include/c++/16/bits/stl_algo.h:
 
 /usr/include/c++/16/optional:
-
-/usr/include/c++/16/sstream:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/stdio.h:
-
-/usr/include/c++/16/stdexcept:
-
-/usr/include/c++/16/tr1/beta_function.tcc:
