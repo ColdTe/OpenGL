@@ -7,19 +7,21 @@
 
 class Shader{
   private:
+    unsigned int shaderProgram;
+  public:
+    Shader(std::filesystem::path vertexPath, std::filesystem::path fragmentPath){
+    
     std::string fstr{};
     std::string vstr{};
     std::ifstream vfile;
     std::ifstream ffile;
     std::stringstream ss;
-    unsigned int vertexShader;
-    unsigned int fragmentShader;
-    unsigned int shaderProgram;
     std::stringstream vShaderStream;
     std::stringstream fShaderStream;
-  public:
-    Shader(std::filesystem::path vertexPath, std::filesystem::path fragmentPath){
-     vfile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+
+    unsigned int vertexShader;
+    unsigned int fragmentShader;
+    vfile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
      ffile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
      try{
       vfile.open(vertexPath);
